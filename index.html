@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Formulär</title>
+		<style>
+			body{
+				background-color: red;
+			}
+			main{
+				width: 80%;
+				margin: 0 auto;
+				background-color: blue;
+			}
+			label {
+				float:left;
+			}
+			input{
+				background-color: lime;
+				border-color: magenta;
+				color: purple;
+			}
+			::placeholder{
+				color: magenta;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<audio controls autoplay loop hidden>
+				<source src="" type="audio/mpeg">
+			</audio>
+			<form action="http://172.20.1.15/kommun/anslagstavla" method="post">
+				<label for="title">Titel: </label>
+				<input type="text" id="title" name="title" placeholder="Titel" required><br>
+				<label for="authority">Organ: </label>
+				<input type="text" id="authority" name="authority" placeholder="Organ" required><br>
+				<label for="repository">Förvaringsplats: </label>
+				<input type="text" id="repository" name="repository" placeholder="Förvaringsplats" required><br>
+				<label for="stub">Beskrivning: </label>
+				<input type="text" id="stub" name="stub" placeholder="Beskrivning" required><br>
+				<label for="pubdate">Publiceringsdatum: </label>
+				<input type="date" id="pubdate" name="pubdate" required><br>
+				<label for="meetdate">Sammanträdelsedatum:</label>
+				<input type="date" id="meetdate" name="meetdate" required><br>
+				<input type="submit" name="knapp" value="Send">
+
+			</form>
+			
+		</main>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
